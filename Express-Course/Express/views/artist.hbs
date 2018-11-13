@@ -1,0 +1,14 @@
+<h1>Add a new artist!</h1>
+<form action="/artist" method="POST">
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+{{#each artists}}
+<ul>{{Name}}</ul>
+{{/each}}
