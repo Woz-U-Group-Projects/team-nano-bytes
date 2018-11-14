@@ -1,7 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var users = require('../models/users');
 const sqlite = require('sqlite3').verbose();
+const models = require('../models');
+const Sequelize = require('sequelize');
+const Op = Sequelize.Op;
+
 
 const db = new sqlite.Database('./chinook.sqlite', err => {
   if (err) {
@@ -39,7 +42,6 @@ router.get('/artist', function(req, res, next) {
     });
   });
 });
-
 
 const newArtist = db.prepare(`INSERT INTO artists(Name) VALUES(?)`);
 
@@ -91,13 +93,87 @@ router.get('/albums/:id', function(req, res, next) {
   });
 });
 
-// router.get('/person/:id', function(req, res, next) {
-//   //get object that matches the id
-//   let person = users.people.find(peep => {
-//     return peep.id === parseInt(req.params.id);
-//   });
-//   res.render('index', { person });
-//   console.log(req.url);
+
+
+router.get('/specificArtist', function(req, res, next) {
+  models.artists
+    .find({
+      where: {
+        ArtistId: 2
+      }
+    })
+    .then(artist => {
+      res.render('specificArtist', {
+        artist: artist
+      });
+    });
+});
+
+// router.get('/artists', function(req, res) {
+//   models.artists
+//     .findAll({
+//       where: {
+//         ArtistId: {
+//           [Op.gt]: 55
+//         }
+//       }
+//     })
+//     .then(data => {
+//       res.render('artists', {
+//         artists: data
+//       });
+//     });
 // });
+
+const artistsList = `SELECT * from artists LIMIT 10`;
+
+router.get('/artists', function(req, res, next) {
+  db.all(artistsList, function(err, row) {
+    res.render('artists', {
+      artists: row
+    });
+  });
+});
+
+router.get('/artists', function(req, res, next) {
+  models.artists.findAll({}).then(artistsFound => {
+    res.render('artists', {
+      artists: artistsFound
+    });
+  });
+});
+
+router.get('/artists/:id', function(req, res, next) {
+  let artistId = parseInt(req.params.id);
+  models.artists
+    .find({
+      where: {
+        ArtistId: artistId
+      }
+    })
+    .then(artist => {
+      res.render('specificArtist', {
+        artist: artist
+      });
+    });
+});
+
+router.post('/artists', (req, res) => {
+  models.artists
+    .findOrCreate({
+      where: {
+        Name: req.body.name,
+        DateFormed: req.body.dateFormed
+      }
+    })
+    .spread(function(result, created) {
+      if (created) {
+        res.redirect('/artists');
+      } else {
+        res.send('This artist already exists!');
+      }
+    });
+});
+
 
 module.exports = router;
