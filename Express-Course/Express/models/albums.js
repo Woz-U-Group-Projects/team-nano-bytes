@@ -1,24 +1,25 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const artists = sequelize.define(
-    'artists',
+  const albums = sequelize.define(
+    'albums',
     {
-      ArtistId: {
+      AlbumId: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true
       },
-      Name: DataTypes.STRING
+      Title: DataTypes.STRING,
+      ArtistId: DataTypes.INTEGER
     },
     {
       timestamps: false
     }
   );
-  artists.associate = function(models) {
-    artists.hasMany(models.albums, {
+  albums.associate = function(models) {
+    albums.belongsTo(models.artists, {
       foreignKey: 'ArtistId'
     });
   };
 
-  return artists;
+  return albums;
 };

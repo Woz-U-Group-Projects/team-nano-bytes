@@ -125,7 +125,7 @@ router.get('/specificArtist', function(req, res, next) {
 //     });
 // });
 
-const artistsList = `SELECT * from artists LIMIT 10`;
+const artistsList = `SELECT * from artists order by ArtistId desc`;
 
 router.get('/artists', function(req, res, next) {
   db.all(artistsList, function(err, row) {
@@ -174,6 +174,16 @@ router.post('/artists', (req, res) => {
       }
     });
 });
+
+router.get('/albums', function(req, res, next) {
+  models.albums.findAll({}).then(albumsFound => {
+    res.render('albums', {
+      albums: albumsFound
+    });
+  });
+});
+
+
 
 
 module.exports = router;
