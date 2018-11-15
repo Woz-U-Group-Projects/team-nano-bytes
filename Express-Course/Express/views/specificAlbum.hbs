@@ -1,2 +1,43 @@
-<h1>{{album.Title}}</h1>
-<h1>{{album.AlbumId}}</h1>
+<h1>{{Title}}</h1>
+<h2>{{YearReleased}}</h2>
+<h2>{{Name}}</h2>
+
+<script>
+    function onSubmit() {
+
+        const title = document.getElementById('title').value;
+        const yearReleased = document.getElementById('yearReleased').value;
+
+        $.ajax({
+            url: '/albums/{{ AlbumId }}',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({ title: title, yearReleased: yearReleased }),
+            method: 'PUT', complete: () => window.location.reload()
+        })
+    }
+
+    function onDelete() {
+        $.ajax({
+            url: '/albums/{{AlbumId}}/delete',
+            method: 'DELETE', complete: () => window.location = "/albums"
+        })
+    }
+</script>
+
+<form onsubmit="onSubmit(); return false">
+    <div>
+        <label for="name">Title: </label>
+        <input type="text" name="title" id="title" value="{{Title}}">
+    </div>
+    <div>
+        <label for="name">Year Released: </label>
+        <input type="text" name="yearReleased" id="yearReleased" value="{{YearReleased}}">
+    </div>
+    <div>
+        <button type="submit" id="submitButton">Update Album</button>
+    </div>
+</form>
+
+<div>
+    <button onclick="onDelete()" id="deleteButton">Delete Album</button>
+</div>

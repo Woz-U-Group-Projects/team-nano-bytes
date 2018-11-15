@@ -9,7 +9,9 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true
       },
       Title: DataTypes.STRING,
-      ArtistId: DataTypes.INTEGER
+      ArtistId: DataTypes.INTEGER,
+      YearReleased: DataTypes.INTEGER,
+      Deleted: DataTypes.BOOLEAN
     },
     {
       timestamps: false
@@ -18,6 +20,9 @@ module.exports = (sequelize, DataTypes) => {
   albums.associate = function(models) {
     albums.belongsTo(models.artists, {
       foreignKey: 'ArtistId'
+    });
+    albums.hasMany(models.tracks, {
+      foreignKey: 'AlbumId'
     });
   };
 

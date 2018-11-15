@@ -66,34 +66,118 @@ router.post('/artist', function(req, res, next) {
   });
 });
 
-const albumList = `SELECT * from albums LIMIT 10`;
+
+const albumList = `SELECT * from albums order by AlbumId desc LIMIT 10`;
 
 router.get('/albums', function(req, res, next) {
-  db.all(albumList, function(err, row) {
-    res.render('albums', {
-      albums: row
-    });
-  });
-});
-
-router.get('/albums/:id', function(req, res, next) {
-  let album = parseInt(req.params.id);
-  console.log(album);
-  let idQuery = `SELECT * FROM albums WHERE AlbumId=${album}`;
-  console.log(idQuery);
-  db.all(idQuery, (err, row) => {
-    console.log(row);
-    if (row.length > 0) {
-      res.render('specificAlbum', {
-        album: row[0]
+  models.albums
+    .findAll({
+      where: {
+        Deleted: null
+      }
+    })
+    .then(albumsFound => {
+      res.render('albums', {
+        albums: albumsFound
       });
-    } else {
-      res.send('not a valid id');
-    }
-  });
+    });
+});
+
+router.post('/albums', (req, res) => {
+  models.artists
+    .findOrCreate({
+      where: {
+        Name: req.body.artist
+      }
+    })
+    .spread(function(result, created) {
+      models.albums
+        .findOrCreate({
+          where: {
+            Title: req.body.title,
+            ArtistId: result.ArtistId,
+            YearReleased: req.body.yearReleased
+          }
+        })
+        .spread(function(result, created) {
+          if (created) {
+            res.redirect('/albums');
+          } else {
+            res.send('This album already exists!');
+          }
+        });
+    });
+});
+
+router.get('/albums/:id', (req, res) => {
+  let albumId = parseInt(req.params.id);
+  models.albums
+    .find({
+      where: {
+        AlbumId: albumId
+      },
+      include: [models.artists]
+    })
+    .then(album => {
+      res.render('specificAlbum', {
+        Title: album.Title,
+        YearReleased: album.YearReleased,
+        Name: album.artist.Name,
+        AlbumId: album.AlbumId
+      });
+    });
+});
+
+router.put('/albums/:id', (req, res) => {
+  let albumId = parseInt(req.params.id);
+  models.albums
+    .update(
+      {
+        Title: req.body.title,
+        YearReleased: req.body.yearReleased
+      },
+      {
+        where: {
+          AlbumId: albumId
+        }
+      }
+    )
+    .then(result => {
+      res.send();
+    });
 });
 
 
+router.delete('/albums/:id/delete', (req, res) => {
+  let albumId = parseInt(req.params.id);
+  models.tracks
+    .update(
+      {
+        Deleted: 'true'
+      },
+      {
+        where: {
+          AlbumId: albumId
+        }
+      }
+    )
+    .then(track => {
+      models.albums
+        .update(
+          {
+            Deleted: 'true'
+          },
+          {
+            where: {
+              AlbumId: albumId
+            }
+          }
+        )
+        .then(album => {
+          res.redirect('/albums');
+        });
+    });
+});
 
 router.get('/specificArtist', function(req, res, next) {
   models.artists
@@ -175,15 +259,16 @@ router.post('/artists', (req, res) => {
     });
 });
 
-router.get('/albums', function(req, res, next) {
-  models.albums.findAll({}).then(albumsFound => {
-    res.render('albums', {
-      albums: albumsFound
-    });
-  });
+
+
+
+router.get('/staticPlanets', function (req, res, next) {
+
+  res.send(JSON.stringify(
+    staticModels.planet
+  ));
 });
 
-
-
+module.exports = router;
 
 module.exports = router;
