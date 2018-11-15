@@ -4,6 +4,7 @@ const sqlite = require('sqlite3').verbose();
 const models = require('../models');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
+const staticModels = require('../staticModels/staticPlanets');
 
 
 const db = new sqlite.Database('./chinook.sqlite', err => {
@@ -261,14 +262,21 @@ router.post('/artists', (req, res) => {
 
 
 
-
-router.get('/staticPlanets', function (req, res, next) {
-
-  res.send(JSON.stringify(
-    staticModels.planet
-  ));
+router.get('/planets', function(req, res, next) {
+  models.planets.findAll().then(planetsAsPlainObjects => {
+    const mappedPlanets = planetsAsPlainObjects.map(
+      sequelizeModelForPlanet => ({
+        id: sequelizeModelForPlanet.id,
+        name: sequelizeModelForPlanet.name,
+        numberOfMoons: sequelizeModelForPlanet.numberOfMoons
+      })
+    );
+    res.send(JSON.stringify(mappedPlanets));
+  });
 });
 
-module.exports = router;
+router.get('/staticPlanets', function(req, res, next) {
+  res.send(JSON.stringify(staticModels.staticPlanets));
+});
 
 module.exports = router;

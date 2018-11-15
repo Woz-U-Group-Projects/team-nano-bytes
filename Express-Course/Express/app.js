@@ -15,6 +15,12 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -42,17 +48,6 @@ app.use(function(err, req, res, next) {
 
 models.sequelize.sync().then(function() {
   console.log("DB Sync'd up")
-});
-
-
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
-
-// add the below here
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
 });
 
 module.exports = app;

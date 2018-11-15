@@ -1,7 +1,7 @@
 {
   "development": {
     "dialect": "sqlite",
-    "storage": "./chinook.sqlite"
+    "storage": "./planets.sqlite"
   },
   "test": {
     "username": "root",
