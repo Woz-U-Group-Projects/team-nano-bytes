@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "dev": "concurrently \"npm run start:dev\" \"cd Front-End && npm start\"",
+    "start:dev": "nodemon npm start",
     "start": "node ./bin/www"
   },
   "dependencies": {

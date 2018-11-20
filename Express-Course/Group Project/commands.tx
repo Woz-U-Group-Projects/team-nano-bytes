@@ -1,0 +1,5 @@
+sudo  npm i concurrently -g
+
+concurrently "npm start" "cd Front-End && npm start"
+
+npm run dev

@@ -262,21 +262,50 @@ const staticModels = require('../staticModels/staticPlanets');
 
 
 
-router.get('/planets', function(req, res, next) {
-  models.planets.findAll().then(planetsAsPlainObjects => {
-    const mappedPlanets = planetsAsPlainObjects.map(
-      sequelizeModelForPlanet => ({
-        id: sequelizeModelForPlanet.id,
-        name: sequelizeModelForPlanet.name,
-        numberOfMoons: sequelizeModelForPlanet.numberOfMoons
-      })
-    );
-    res.send(JSON.stringify(planetsAsPlainObjects));
-  });
+// router.get('/planets', function(req, res, next) {
+//   models.planets.findAll().then(planetsAsPlainObjects => {
+//     const mappedPlanets = planetsAsPlainObjects.map(
+//       sequelizeModelForPlanet => ({
+//         id: sequelizeModelForPlanet.id,
+//         name: sequelizeModelForPlanet.name,
+//         numberOfMoons: sequelizeModelForPlanet.numberOfMoons
+//       })
+//     );
+//     res.send(JSON.stringify(planetsAsPlainObjects));
+//   });
+// });
+
+// router.get('/staticPlanets', function(req, res, next) {
+//   res.send(JSON.stringify(staticModels.planet));
+// });
+
+var users = [
+  {id:1,username:'busyrich',status:'still awesome'},
+  {id:2,username:'joshua',status:'has guitar'}
+];
+
+/* GET users listing. */
+router.get('/all', function(req, res, next) {
+  res.json(users);
 });
 
-router.get('/staticPlanets', function(req, res, next) {
-  res.send(JSON.stringify(staticModels.planet));
+router.get('/:userId', function(req, res, next) {
+  res.json(users.filter(u => u.id == req.params.userId)[0]);
+});
+
+router.post('/add', function(req, res, next) {
+  var newUser = {
+    id: Math.floor(Math.random() * 1000),
+    username: req.body.username,
+    status: req.body.status
+  };
+
+  users.push(newUser);
+
+  res.json({
+    success: true,
+    newUser
+  });
 });
 
 module.exports = router;
