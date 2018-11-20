@@ -1,7 +1,10 @@
 {
   "development": {
-    "dialect": "sqlite",
-    "storage": "./planets.sqlite"
+    "username": "nano",
+    "password": "groupproject",
+    "database": "nano",
+    "host": "nano-database.crq7uv22yjmt.us-east-2.rds.amazonaws.com",
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
@@ -18,3 +21,4 @@
     "dialect": "mysql"
   }
 }
+
