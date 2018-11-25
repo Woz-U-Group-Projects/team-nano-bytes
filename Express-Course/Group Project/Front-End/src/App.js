@@ -30,6 +30,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Card from './Card';
 import data from './data/data'
+import logo from './logo.png';
+
 
 
 import EpicMenu from './components/EpicMenu';
@@ -64,7 +66,7 @@ class App extends Component {
   render() {
     const {properties, property} = this.state;
     let links =   [
-      { label: 'Home', link: '/home'},
+      { label: 'Home', link: '/home', active: true},
       { label: 'About', link: '/about'},
       { label: 'Portfolio', link: '/portfolio'},
       { label: 'Contact Us', link: '/contact-us'},
@@ -79,7 +81,7 @@ class App extends Component {
 
    <div className="container center">
 
-<EpicMenu links={links} />>
+<EpicMenu links={links} logo={logo} />>
 
     </div>
         
@@ -103,7 +105,7 @@ class App extends Component {
             
             
             <section>
-                <h1>Journal of Pictures</h1>
+                <h1> Pictures</h1>
             </section>
 
             <div className="col">

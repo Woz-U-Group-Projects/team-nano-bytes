@@ -23,119 +23,6 @@ body {
 
 
 
-
-
-.container {
-    width: 1000px;
-    margin: 20px auto;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-}
-
-.hide {
-    display: none;
-}
-
-.menu {
-    background-color: white;
-    box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    width: 752px;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-    position: relative;
-}
-
-.menu__right {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.menu__list {
-    list-style-type: none;
-    padding: 0;
-    height: 100%;
-    margin: 0;
-    margin-right: 40px;
-}
-
-.menu__list-item {
-    display: inline-block;
-    height: 100%;
-    margin-right: 20px;
-}
-
-.menu__list-item:last-child {
-    margin-right: 0;
-}
-
-.menu__link {
-    color: #3a3e47;
-    display: inline-block;
-    height: 100%;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    padding: 0 3px;
-}
-
-.menu__link:hover {
-    color: #ffaa3b;
-}
-
-.menu__link--active {
-    /* color: #ffaa3b;
-    border-top: 4px solid #ffaa3b; */
-    font-weight: 700;
-}
-
-.menu__logo {
-    text-indent: -9999999px;
-    display: inline-block;
-    height: 100%;
-    width: 92px;
-    background-size: cover 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-}
-
-.menu__search-button {
-    height: 42px;
-    width: 42px;
-    border-radius: 50%;
-    border: 1px solid #c8c9ce;
-    background-color: transparent;
-    outline: none;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.menu__search-form {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    padding: 10px;
-    background-color: white;
-}
-
-.menu__search-input {
-    outline: none;
-    border: 1px solid #c8c9ce;
-    font-size: 18px;
-    padding: 5px;
-    font-weight: 300;
-}
-
 .nav {
   padding: 30px 0;
  }
@@ -257,65 +144,66 @@ font-size: 25px;
     transform: scale(0.8);
     box-shadow: none;
     background-color: black;
-    border-color: white;
+    border-color: black;
     transition: opacity 300ms linear, border-color 300ms linear, background-color 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
     .cards-slider-wrapper .card .details {
       opacity: 0;
-      transition: opacity 150ms linear; }
+      transition: opacity 150ms linear;
+    color: white; }
 
 .cards-slider.active-slide-0 #card-0 {
   opacity: 1;
   transform: scale(1);
-  background-color: #f3f3f3;
-  border-color: #f3f3f3; }
+  background-color: black;
+  border-color: black; }
   .cards-slider.active-slide-0 #card-0 .details {
     opacity: 1; }
 
 .cards-slider.active-slide-1 #card-1 {
   opacity: 1;
   transform: scale(1);
-  background-color: #f3f3f3;
-  border-color: #f3f3f3; }
+  background-color: black;
+  border-color: black; }
   .cards-slider.active-slide-1 #card-1 .details {
     opacity: 1; }
 
 .cards-slider.active-slide-2 #card-2 {
   opacity: 1;
   transform: scale(1);
-  background-color: #f3f3f3;
-  border-color: #f3f3f3; }
+  background-color: black;
+  border-color: black; }
   .cards-slider.active-slide-2 #card-2 .details {
     opacity: 1; }
 
 .cards-slider.active-slide-3 #card-3 {
   opacity: 1;
   transform: scale(1);
-  background-color: #f3f3f3;
-  border-color: #f3f3f3; }
+  background-color: black;
+  border-color: black; }
   .cards-slider.active-slide-3 #card-3 .details {
     opacity: 1; }
 
 .cards-slider.active-slide-4 #card-4 {
   opacity: 1;
   transform: scale(1);
-  background-color: #f3f3f3;
-  border-color: #f3f3f3; }
+  background-color: black;
+  border-color: black; }
   .cards-slider.active-slide-4 #card-4 .details {
     opacity: 1; }
 
 .cards-slider.active-slide-5 #card-5 {
   opacity: 1;
   transform: scale(1);
-  background-color: #f3f3f3;
-  border-color: #f3f3f3; }
+  background-color: black;
+  border-color: black; }
   .cards-slider.active-slide-5 #card-5 .details {
     opacity: 1; }
 
 .cards-slider.active-slide-6 #card-6 {
   opacity: 1;
   transform: scale(1);
-  background-color: #f3f3f3;
-  border-color: #f3f3f3; }
+  background-color: black;
+  border-color: black; }
   .cards-slider.active-slide-6 #card-6 .details {
     opacity: 1; }
 
