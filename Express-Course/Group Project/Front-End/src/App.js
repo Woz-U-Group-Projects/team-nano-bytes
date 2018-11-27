@@ -31,10 +31,11 @@ import './App.css';
 import Card from './Card';
 import data from './data/data'
 import logo from './logo.png';
-
-
-
+import axios from 'axios';
+import Pictures from './components/Data';
 import EpicMenu from './components/EpicMenu';
+
+
 
 // class component
 class App extends Component {
@@ -77,6 +78,8 @@ class App extends Component {
 
     return (
       <div className="App">
+
+    {/* <Pictures uri="http://localhost:3001/data" /> */}
 
 
    <div className="container center">
