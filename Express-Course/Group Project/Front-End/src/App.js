@@ -6,12 +6,10 @@ import logo from './logo.png';
 import axios from 'axios';
 import Pictures from './components/Pictures';
 import EpicMenu from './components/EpicMenu';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
+// import About from './components/About';
+// import Portfolio from './components/Portfolio';
 
 
-
-// class component
 class App extends Component {
 
   constructor(props){
@@ -39,6 +37,7 @@ class App extends Component {
   }
 
   render() {
+   
     const {properties, property} = this.state;
     let links =   [
       { label: 'Home', link: '/home'},
@@ -47,8 +46,6 @@ class App extends Component {
       { label: 'Contact Us', link: '/contact-us'},
 ]
    
-
-
     return (
 
 <div className="App">
