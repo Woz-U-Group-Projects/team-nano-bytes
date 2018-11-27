@@ -1,0 +1,18 @@
+<h1>Add a new User!</h1>
+
+<form action="/users" method="POST">
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+
+<h2>Users:</h2>
+
+{{#each users}}
+<p>{{Name}}</p>
+{{/each}}

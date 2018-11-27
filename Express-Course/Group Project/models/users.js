@@ -1,9 +1,9 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const artists = sequelize.define(
-    'artists',
+  const users = sequelize.define(
+    'users',
     {
-      ArtistId: {
+      UserId: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true
@@ -14,11 +14,5 @@ module.exports = (sequelize, DataTypes) => {
       timestamps: false
     }
   );
-  artists.associate = function(models) {
-    artists.hasMany(models.albums, {
-      foreignKey: 'ArtistId'
-    });
-  };
-
-  return artists;
+  return users;
 };
