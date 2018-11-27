@@ -32,7 +32,7 @@ import Card from './Card';
 import data from './data/data'
 import logo from './logo.png';
 import axios from 'axios';
-import Pictures from './components/Data';
+import Pictures from './components/Pictures';
 import EpicMenu from './components/EpicMenu';
 
 
@@ -79,7 +79,6 @@ class App extends Component {
     return (
       <div className="App">
 
-    {/* <Pictures uri="http://localhost:3001/data" /> */}
 
 
    <div className="container center">
@@ -109,7 +108,12 @@ class App extends Component {
             
             <section>
                 <h1> Pictures</h1>
+
+    <Pictures uri="http://localhost:3001/staticPictures" />
+
             </section>
+
+
 
             <div className="col">
               <div className={`cards-slider active-slide-${property.index}`}>

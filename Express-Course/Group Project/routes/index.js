@@ -4,14 +4,29 @@ const sqlite = require('sqlite3').verbose();
 const models = require('../models');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
-const staticModels = require('../staticModels/staticPlanets');
+const staticModels = require('../staticModels/pictures');
 const otherModels = require('../otherModels/data');
+
+router.get('/', function (req, res, next){ 
+  res.send('Hello Team NANO');
+});
+
 
 router.get('/users', function(req, res, next) {
   models.users.findAll({}).then(usersFound => {
     res.render('users', {
       users: usersFound
     });
+  });
+});
+
+router.get('/users', function(req, res, next) {
+  models.users.findAll({}).then(userAsPlainObject => {
+    const mappedUsers = userAsPlainObject.map(user => ({
+      UserId: user.UserId,
+      Name: user.Name
+    }));
+    res.send(JSON.stringify(mappedUsers));
   });
 });
 
@@ -31,7 +46,12 @@ router.post('/users', (req, res) => {
     });
 });
 
+router.get('/staticPictures', function (req, res, next) {
 
+  res.send(JSON.stringify(
+    staticModels.picture
+  ));
+});
 
 
 module.exports = router;
