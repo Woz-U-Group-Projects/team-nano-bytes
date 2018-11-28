@@ -2,22 +2,22 @@ import React, { Component } from 'react';
 
 // import React from 'react';
 
-// const About = (
+// const Contact = (
 //  <div>
-//    <h2>About</h2>
+//    <h2>Contact</h2>
 //  </div>
 // )
 
-//export default About;
+//export default Contact;
 
-class About extends Component {
+class Contact extends Component {
   render() {
     return (
         <div>
-          <h2>About</h2>
+          <h2>Contact</h2>
         </div>
     );
   }
 }
 
-export default About;
+export default Contact;
