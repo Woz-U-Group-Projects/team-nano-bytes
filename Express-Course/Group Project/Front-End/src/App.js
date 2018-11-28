@@ -6,11 +6,6 @@ import logo from './logo.png';
 import axios from 'axios';
 import Pictures from './components/Pictures';
 import EpicMenu from './components/EpicMenu';
-<<<<<<< HEAD
-// import About from './components/About';
-// import Portfolio from './components/Portfolio';
-// Hello Meeli
-=======
 // import React from "react";
 // import {render} from 'react-dom';
 // import About from './screens/About';
@@ -34,7 +29,6 @@ import EpicMenu from './components/EpicMenu';
 //   <App />,
 //    document.getElementById('root')
 // );
->>>>>>> gaylyn
 
 
 class App extends Component {
