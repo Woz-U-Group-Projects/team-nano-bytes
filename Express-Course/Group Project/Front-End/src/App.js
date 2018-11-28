@@ -8,7 +8,7 @@ import Pictures from './components/Pictures';
 import EpicMenu from './components/EpicMenu';
 // import About from './components/About';
 // import Portfolio from './components/Portfolio';
-//Hello Meeli
+// Hello Meeli
 
 
 class App extends Component {
