@@ -6,9 +6,29 @@ import logo from './logo.png';
 import axios from 'axios';
 import Pictures from './components/Pictures';
 import EpicMenu from './components/EpicMenu';
-// import About from './components/About';
-// import Portfolio from './components/Portfolio';
-//Hello Meeli
+// import React from "react";
+// import {render} from 'react-dom';
+// import About from './screens/About';
+// import Portfolio from './screens/Portfolio';
+// import Home from './screens/Home';
+// import Contact from './screens/Contact';
+// import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+
+// const App = () => (
+//  <Router>
+//    <div>
+//      <Route path="/" component={Home} />
+//      <Route path="/about" component={About} />
+//      <Route path="/contact" component={Contact} />
+//      <Route path="/portfolio" component={Portfolio} />
+//    </div>
+//  </Router>
+// );
+
+// render(
+//   <App />,
+//    document.getElementById('root')
+// );
 
 
 class App extends Component {

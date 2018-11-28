@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
-
 // import React from 'react';
 
-// const About = (
+// const Home = (
 //  <div>
-//    <h2>About</h2>
+//    <h2>Home</h2>
 //  </div>
 // )
 
-//export default About;
+//export default Home;
 
-class About extends Component {
+class Home extends Component {
   render() {
     return (
         <div>
-          <h2>About</h2>
+          <h2>Home</h2>
         </div>
     );
   }
 }
 
-export default About;
+export default Home;
