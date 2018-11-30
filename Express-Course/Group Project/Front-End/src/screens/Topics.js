@@ -1,6 +1,6 @@
 import React from 'react';
 import Topic from './Topic';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Route, Link } from 'react-router-dom';
 
 const Topics = ({ match }) => (
   <div>

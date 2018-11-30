@@ -1,23 +1,17 @@
-import React, { Component } from 'react';
 
-// import React from 'react';
+// import React, { Component } from 'react';
+// import '../App.css';
+// import Card from '../Card';
+// import data from '../data/data'
+// import logo from '../logo.png';
 
-// const Portfolio = (
-//  <div>
-//    <h2>Portfolio</h2>
-//  </div>
-// )
+import React from "react";
 
-//export default Portfolio;
-
-class Portfolio extends Component {
-  render() {
-    return (
-        <div>
-          <h2>Portfolio</h2>
-        </div>
-    );
-  }
-}
+const Portfolio = () => (
+  <div>
+    <h2>Portfolio</h2>
+  </div>
+);
 
 export default Portfolio;
+
