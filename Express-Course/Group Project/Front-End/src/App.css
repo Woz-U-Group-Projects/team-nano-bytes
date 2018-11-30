@@ -117,19 +117,7 @@ font-size: 25px;
       display: inline-block; }
       .card .features li span {
         display: none; }
-      .card .features li.icon-bed {
-        background: url(./assets/bed-left-side.svg) left center;
-        background-size: auto 100%;
-        background-repeat: no-repeat; }
-      .card .features li.icon-bath {
-        background: url(./assets/bathtub.svg);
-        background-size: auto 100%;
-        background-repeat: no-repeat; }
-      .card .features li.icon-car {
-        background: url(./assets/car-compact.svg);
-        background-size: auto 100%;
-        background-repeat: no-repeat; }
-
+     
 /* #endregion */
 /* #region cards slider */
 .cards-slider-wrapper {
