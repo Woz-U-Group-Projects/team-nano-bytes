@@ -7,8 +7,8 @@ import * as serviceWorker from './serviceWorker';
 // inport {render} from 'react-dom';
 // import Home from './screens/Home';
 // import About from './screens/About';
-// import Portfolio from './screens/Portfolio';
 // import Contact from './screens/Contact';
+// import Portfolio from './screens/Portfolio';
 // import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 // const App = () => (

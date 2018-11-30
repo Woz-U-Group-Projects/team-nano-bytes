@@ -8,10 +8,10 @@ import Pictures from './components/Pictures';
 import EpicMenu from './components/EpicMenu';
 // import React from "react";
 // import {render} from 'react-dom';
-// import About from './screens/About';
-// import Portfolio from './screens/Portfolio';
 // import Home from './screens/Home';
+// import About from './screens/About';
 // import Contact from './screens/Contact';
+// import Portfolio from './screens/Portfolio';
 // import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 // const App = () => (
