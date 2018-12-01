@@ -9,8 +9,8 @@ import './App.css';
 
 const App = () => (
   <Router>
-    <div>
-      <ul>
+    <div >
+      <ul className="nav">
         <li>
           <Link to="/">Home</Link>
         </li>
