@@ -1,8 +1,15 @@
 import React from 'react';
+import Search from '../components/search/Search';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
+const  Home  = () => (
+  <div className="Search">
+          <MuiThemeProvider>
+
+          <Search />
+
+        </MuiThemeProvider>
+
   </div>
 );
 
