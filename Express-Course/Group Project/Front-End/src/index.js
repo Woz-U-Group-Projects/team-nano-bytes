@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 // import React from 'react';
-// inport {render} from 'react-dom';
+// import {render} from 'react-dom';
 // import Home from './screens/Home';
 // import About from './screens/About';
 // import Contact from './screens/Contact';
 // import Portfolio from './screens/Portfolio';
+// import Photos from './screens/Photos';
 // import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 // const App = () => (
