@@ -6,6 +6,8 @@ import About from "./screens/3-About";
 import Contact from "./screens/4-Contact";
 import Topics from './screens/Topics';
 import './App.css';
+import './1-Navbar.css';
+
 
 const App = () => (
   <Router>

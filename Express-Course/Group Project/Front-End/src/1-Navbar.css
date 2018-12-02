@@ -1,0 +1,33 @@
+.nav {
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    width: 84%;
+    height: 41px;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: relative;
+  background-color: black;
+  text-decoration: none;
+
+   }
+  
+  .nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    transition: all 1s linear;
+    text-decoration: none;
+    color: white; 
+    background-color: #1f9ec7d4;
+    box-shadow: 0px 0px 21px 4px rgba(60, 159, 178, 0.66);
+    background: linear-gradient(to right, #60beb185 15%, rgba(255, 255, 255, 0) 100%);
+  
+  }
+  
+    .nav a:hover {
+      color: #0aa99e;
+  }

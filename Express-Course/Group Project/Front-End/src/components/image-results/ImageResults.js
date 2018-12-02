@@ -56,7 +56,7 @@ class ImageResults extends Component {
     ];
 
     return (
-      <div>
+      <div className = "search">
         {imageListContent}
         <Dialog
           actions={actions}
@@ -64,7 +64,7 @@ class ImageResults extends Component {
           open={this.state.open}
           onRequestClose={this.handleClose}
         >
-          <img src={this.state.currentImg} alt="" style={{ width: '100%' }} />
+          <img src={this.state.currentImg} alt="" style={{ width: '50%' }} />
         </Dialog>
       </div>
     );

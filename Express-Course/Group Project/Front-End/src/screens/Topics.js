@@ -3,10 +3,10 @@ import Topic from './Topic';
 import { BrowserRouter as Route, Link } from 'react-router-dom';
 
 const Topics = ({ match }) => (
-  <div>
+  <div >
     <h2>Topics</h2>
-    <ul>
-      <li>
+    <ul >
+      <li >
         <Link to={`${match.url}/rendering`}>Rendering with React</Link>
       </li>
       <li>

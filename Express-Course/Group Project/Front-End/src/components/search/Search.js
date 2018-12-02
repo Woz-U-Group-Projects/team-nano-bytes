@@ -4,6 +4,7 @@ import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import axios from 'axios';
 import ImageResults from '../image-results/ImageResults';
+import '../../../src/0-Home.css';
 
 class Search extends Component {
   state = {
@@ -54,9 +55,7 @@ class Search extends Component {
         >
           <MenuItem value={5} primaryText="5" />
           <MenuItem value={10} primaryText="10" />
-          <MenuItem value={15} primaryText="15" />
-          <MenuItem value={30} primaryText="30" />
-          <MenuItem value={50} primaryText="50" />
+          <MenuItem value={15} primaryText="15" />        
         </SelectField>
         <br />
         {this.state.images.length > 0 ? (
