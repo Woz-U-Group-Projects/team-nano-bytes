@@ -1,9 +1,3 @@
-
-
-/* .Search {
-    background-color: white;
-} */
-
 .SearchText {
     background-color: #0bafb578;
     width: 90%;
@@ -22,7 +16,24 @@
     width: 50px;
     margin: 6px 12px;
     padding: 0px 2px 2px 17px;
+    color:white;
 }
 
+#SField {
+    width: 500px;
+    background-color:white;
+    color:white;
 
+}
 
+button {
+    background-color: #1f9ec7d4;
+    font-size: 24px;
+    color:white;
+    border-color: transparent;
+    
+   }
+
+   label {
+       color: white;
+   }

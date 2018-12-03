@@ -7,7 +7,16 @@
     height: 98px;
     
   }
-
+  button:hover {
+    background-color: #074465a1; 
+  }
+  
+  section {
+    padding: 20px 0;
+    max-width: 600px;
+    margin: 0 auto;
+    color:white;
+   } 
 .card {
     border: 3px #f3f3f3 solid;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);

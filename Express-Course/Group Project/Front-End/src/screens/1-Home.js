@@ -1,9 +1,10 @@
 import React from 'react';
 import Search from '../components/search/Search';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// import '../../src/0-Home.css';
 
 const  Home  = () => (
-  <div className="Search">
+  <div >
           <MuiThemeProvider>
 
           <Search />
@@ -15,16 +16,3 @@ const  Home  = () => (
 
 export default Home;
 
-// import React, { Component } from 'react';
-
-// class Home extends Component {
-//   render() {
-//     return (
-//         <div>
-//           <h2>Home</h2>
-//         </div>
-//     );
-//   }
-// }
-
-// export default Home;

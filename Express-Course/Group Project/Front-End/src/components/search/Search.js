@@ -4,7 +4,7 @@ import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import axios from 'axios';
 import ImageResults from '../image-results/ImageResults';
-import '../../../src/0-Home.css';
+import '../0-Home.css';
 
 class Search extends Component {
   state = {
@@ -51,9 +51,9 @@ class Search extends Component {
         <br />
 
         <div className = "SelectField">
-        <SelectField 
+        <SelectField id = "SField"
           name="amount"
-          floatingLabelText="Amount"
+          floatingLabelText="Amount" 
           value={this.state.amount}
           onChange={this.onAmountChange}
         >

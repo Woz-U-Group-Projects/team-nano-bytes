@@ -5,7 +5,7 @@ import IconButton from 'material-ui/IconButton';
 import ZoomIn from 'material-ui/svg-icons/action/zoom-in';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
-import '../../../src/0-Home.css';
+import '../0-Home.css';
 
 class ImageResults extends Component {
   state = {
