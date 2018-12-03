@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 /* 16:31 */
 
 /* #region Default styles */
-body {
+ body {
   margin: 0;
   padding: 0 0 100px 0;
   font-family: sans-serif;
@@ -11,7 +11,7 @@ body {
   background-color: black;
  }
 
-button {
+/* button {
     background-color: #1f9ec7d4;
     font-size: 24px;
     color:white;
@@ -20,15 +20,14 @@ button {
     margin: 24px 20px -10px;
     border-color: transparent;
     display: inline;
-    width: 13%;
     background: linear-gradient(to right, #60beb185 15%, rgba(255, 255, 255, 0) 100%);
     top: 0;
     left: 0;
-   }
+   } */
 
 
 button:hover {
-  background-color: #074465a1; /* Green */
+  background-color: #074465a1; 
 }
 
 section {
@@ -36,5 +35,7 @@ section {
   max-width: 600px;
   margin: 0 auto;
   color:white;
- }
-
+ } 
+ 
+ 
+ 

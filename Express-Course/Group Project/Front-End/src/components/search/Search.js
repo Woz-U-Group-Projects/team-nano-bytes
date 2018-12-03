@@ -51,7 +51,7 @@ class Search extends Component {
         <br />
 
         <div className = "SelectField">
-        <SelectField 
+        <SelectField id = "SField"
           name="amount"
           floatingLabelText="Amount"
           value={this.state.amount}
