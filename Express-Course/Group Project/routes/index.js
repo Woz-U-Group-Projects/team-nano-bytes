@@ -6,6 +6,7 @@ const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 const staticModels = require('../staticModels/pictures');
 
+
 router.get('/', function (req, res, next){ 
   res.send('Team Nano');
 });
