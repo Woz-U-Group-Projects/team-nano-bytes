@@ -1,7 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
-/* 16:31 */
-
 /* #region Default styles */
  body {
   margin: 0;
@@ -26,16 +24,7 @@
    } */
 
 
-button:hover {
-  background-color: #074465a1; 
-}
 
-section {
-  padding: 20px 0;
-  max-width: 600px;
-  margin: 0 auto;
-  color:white;
- } 
  
  
  

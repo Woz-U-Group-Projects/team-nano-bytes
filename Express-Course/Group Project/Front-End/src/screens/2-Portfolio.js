@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Card from '../Card';
+import Card from '../screens/2.1-Card';
 import data from '../data/data'
-import '../../src/2-Portfolio.css';
+import '../screens/2-Portfolio.css';
 import Pictures from '../components/Pictures';
 
 
