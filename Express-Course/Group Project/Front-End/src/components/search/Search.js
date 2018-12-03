@@ -38,25 +38,34 @@ class Search extends Component {
   render() {
     console.log(this.state.images);
     return (
-      <div>
+      <div className = "SearchText">
+        <div className = "TextField">
         <TextField 
-          name="searchText"
+          name="searchText" 
           value={this.state.searchText}
           onChange={this.onTextChange}
           floatingLabelText="Search For Images"
-          fullWidth={true}
+          fullWidth={false}
         />
+        </div>
         <br />
-        <SelectField className="TextField"
+
+        <div className = "SelectField">
+        <SelectField 
           name="amount"
           floatingLabelText="Amount"
           value={this.state.amount}
           onChange={this.onAmountChange}
         >
+        
           <MenuItem value={5} primaryText="5" />
           <MenuItem value={10} primaryText="10" />
-          <MenuItem value={15} primaryText="15" />        
+          <MenuItem value={15} primaryText="15" />   
+  
+
         </SelectField>
+        </div>
+
         <br />
         {this.state.images.length > 0 ? (
           <ImageResults images={this.state.images} />

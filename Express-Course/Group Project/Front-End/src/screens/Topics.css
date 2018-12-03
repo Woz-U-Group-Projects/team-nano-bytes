@@ -1,0 +1,50 @@
+.Topic {
+    background-color: #127b79;
+    width: 272px;
+    margin: 4% 31%;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.Link {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #30747d;
+    background-color: #c7edf4;
+    padding: 6px;
+    margin: -2px;
+}
+
+h2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    background-color: #18494db8;
+    height: 250px;
+    width: 272px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

@@ -1,3 +1,28 @@
-.TextField {
+
+
+/* .Search {
     background-color: white;
+} */
+
+.SearchText {
+    background-color: #0bafb578;
+    width: 90%;
+    padding: 3px 1px;
+    margin: 25px 31px;
+    color: white;
 }
+
+.TextField {
+    width: 260px;
+    margin: 6px 12px;
+    padding: 0px 2px 2px 17px;
+}
+
+.SelectField {
+    width: 50px;
+    margin: 6px 12px;
+    padding: 0px 2px 2px 17px;
+}
+
+
+
