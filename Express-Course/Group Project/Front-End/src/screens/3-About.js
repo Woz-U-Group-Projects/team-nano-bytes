@@ -11,7 +11,7 @@ const About = () => (
       <p>"Our World Is So Beautiful" was started by a group of students called Team nano Bytes as a team project. The team consists of four students, Johnny Rodriguez, Meeli Sonn, Ashley Warren, and Amy Jaramillo.</p> 
 
     <h2>Contact Info</h2> 
-      <p></p>
+      <p>Email: wozunano@gmail.com</p>
 
 
   </div>
