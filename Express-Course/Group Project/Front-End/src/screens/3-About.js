@@ -28,15 +28,15 @@ const About = () => (
           <p>Johnny Rodriguez</p>
           <p>Front-End and Style</p>        
         
-          <img id="gaylyn" width= "200" height= "235" alt="GayLynJaramillo" src="../assets/images/gaylyn.png"></img>        
+        <img id="gaylyn" width= "200" height= "235" alt="GayLynJaramillo" src="../assets/images/gaylyn.png"></img>        
           <p>Ashley Warren</p>
           <p>Back-End and Database</p>        
         
-          <img id="gaylyn" width= "200" height= "235" alt="GayLynJaramillo" src="../assets/images/gaylyn.png"></img>         
+        <img id="gaylyn" width= "200" height= "235" alt="GayLynJaramillo" src="../assets/images/gaylyn.png"></img>         
           <p>Meeli Sonn</p>
           <p>Back-End and Database</p>      
         
-          <img id="gaylyn" width= "200" height= "235" alt="GayLynJaramillo" src="../assets/images/gaylyn.png"></img>            
+        <img id="gaylyn" width= "200" height= "235" alt="GayLynJaramillo" src="../assets/images/gaylyn.png"></img>            
           <p>GayLyn Jaramillo</p>
           <p>Front-End and Style</p>
       </div>
