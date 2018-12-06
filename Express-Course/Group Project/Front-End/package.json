@@ -24,5 +24,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "file-loader": "^2.0.0",
+    "url-loader": "^1.1.2"
+  }
 }
