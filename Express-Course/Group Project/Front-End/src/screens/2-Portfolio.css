@@ -10,6 +10,19 @@
   button:hover {
     background-color: #074465a1; 
   }
+
+  button {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    transition: all 1s linear;
+    text-decoration: none;
+    color: white; 
+    background-color: #1f9ec7d4;
+    background: linear-gradient(to right, #60beb185 15%, rgba(255, 255, 255, 0) 100%);
+    margin: 19px;
+  }
   
   section {
     padding: 20px 0;

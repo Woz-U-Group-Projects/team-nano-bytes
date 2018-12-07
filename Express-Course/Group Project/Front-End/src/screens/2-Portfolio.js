@@ -52,13 +52,13 @@ class Portfolio extends Component {
         >Next</button>
 
         <div className="page">
-
-            <section>
+        <section>
                 <h1> Pictures</h1>
 
     <Pictures uri="http://localhost:3001/staticPictures" />
 
             </section>
+         
             <div className="col">
               <div className={`cards-slider active-slide-${property.index}`}>
                 <div className="cards-slider-wrapper" style={{
@@ -67,11 +67,17 @@ class Portfolio extends Component {
                   {
                     properties.map(property => <Card key={property._id} property={property} />)
                   }
+
+               
                 </div>
               </div>
             </div>
 
         </div>
+                
+              
+            
+
       </div>
     );
   }
