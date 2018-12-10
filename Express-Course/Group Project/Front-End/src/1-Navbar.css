@@ -27,7 +27,23 @@
     background: linear-gradient(to right, #60beb185 15%, rgba(255, 255, 255, 0) 100%);
   
   }
+
+ 
   
     .nav a:hover {
       color: #0aa99e;
   }
+
+  @media screen and (max-width: 600px){
+
+    .nav {
+       flex-direction: column;
+       height: 203px;
+    }
+    .nav a {
+      flex-direction: column;
+   }
+    
+     }
+
+   

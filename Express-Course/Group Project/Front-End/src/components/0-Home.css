@@ -37,3 +37,15 @@ button {
    label {
        color: white;
    }
+
+   @media screen and (max-width: 500px){
+
+    .SearchText {
+       flex-direction: column;
+       height: 203px;
+    }
+    SearchText {
+      flex-direction: column;
+   }
+    
+     }
