@@ -14,7 +14,7 @@ import gaylyn from './assets/images/gaylyn.png'; */
 
 const App = () => (
   <Router>
-    <div >
+    <div  >
       <ul className="nav">
         <li>
           <Link to="/">Home</Link>
@@ -33,7 +33,7 @@ const App = () => (
 
       </ul>
 
-      <hr />
+    
 
       <Route exact path="/" component={Home} />
       <Route path="/portfolio" component={Portfolio} />
