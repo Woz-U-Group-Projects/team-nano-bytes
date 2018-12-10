@@ -6,6 +6,10 @@ import About from "./screens/3-About";
 import Topics from './screens/Topics';
 import './App.css';
 import './1-Navbar.css';
+/*import johnny from './assets/images/johnny.png';
+import ashley from './assets/images/ashley.png';
+import meeli from './assets/images/meeli.png';
+import gaylyn from './assets/images/gaylyn.png'; */
 
 
 const App = () => (
