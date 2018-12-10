@@ -18,7 +18,7 @@ const About = () => (
 
     <div className="team">
       <h2>The Team:</h2>
-      <p>"Our World Is So Beautiful" was started by a group of students called Team nano Bytes as a team project. The team consists of four students, Johnny Rodriguez, Meeli Sonn, Ashley Warren, and Amy Jaramillo.</p> 
+      <p>"Our World Is So Beautiful" was started by a group of students called Team Nano Bytes as a team project. The team consists of four students: Johnny Rodriguez, Meeli Sonn, Ashley Warren, and GayLyn Jaramillo.</p> 
     </div>
 
     <div className="members">
