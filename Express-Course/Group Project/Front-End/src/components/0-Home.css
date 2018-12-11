@@ -25,13 +25,20 @@
     color:white;
 
 }
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Noto Serif TC', serif;
+    box-shadow: 2px 5px 2px rgb(60, 139, 139);
+    
+}
 
 button {
     background-color: #1f9ec7d4;
     font-size: 24px;
     color:white;
     border-color: transparent;
-    
+    position: relative;
    }
 
    label {

@@ -5,14 +5,17 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const  Home  = () => (
   <div >
+    <p className="title">Our World Is A Beautiful Place</p>
+
           <MuiThemeProvider>
 
           <Search />
 
         </MuiThemeProvider>
-
+    
   </div>
 );
+
 
 export default Home;
 

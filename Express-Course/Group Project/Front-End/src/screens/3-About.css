@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    position: relative;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 24px;
+    color:white;
+    border-color: transparent;
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    background-color: #0bafb578;
+    font-size: 24px;
+    color:white;
+    border-color: transparent;
+}
+
+img {
+    max-width: 300px;    
+    border-color: transparent;
+    box-shadow: 2px 5px 2px rgb(60, 139, 139);
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+p {
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 15px
+}
+
