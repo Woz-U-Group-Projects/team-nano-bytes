@@ -34,7 +34,7 @@ const About = () => (
         
         <img id="meeli" width= "200" height= "235" alt="MeeliSonn" src="./assets/images/meeli.png"></img>        
           <p>Meeli Sonn</p>
-          <p>Back-End and Database</p>      
+          <p>Back-End and Database <br/> I was a teacher. <br/> I like to take pictures</p>      
         
         <img id="gaylyn" width= "200" height= "235" alt="GayLynJaramillo" src="./assets/images/gaylyn.png"></img>            
           <p>GayLyn Jaramillo</p>
