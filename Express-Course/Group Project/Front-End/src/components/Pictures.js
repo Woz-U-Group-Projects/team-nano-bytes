@@ -28,7 +28,10 @@ class Pictures extends React.Component {
     }
     const pictures = this.state.pictureData.map(picture => (
       <div key={picture.author}>
-        <em>{picture.author}</em>: {picture.url}
+        <em>{picture.author}</em>
+
+        <img src={picture.url} height="42" width="42"/>
+
       </div>
     ));
     return <div>{pictures}</div>;

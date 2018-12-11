@@ -1,20 +1,19 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const users = sequelize.define(
-    'users',
+  const pictures = sequelize.define(
+    'pictures',
     {
-      UserId: {
+      PictureId: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true
       },
-      Name: DataTypes.STRING
+      Author: DataTypes.STRING,
+      Url: DataTypes.STRING,
     },
     {
       timestamps: false
     }
   );
-  return users;
+  return pictures;
 };
-
-

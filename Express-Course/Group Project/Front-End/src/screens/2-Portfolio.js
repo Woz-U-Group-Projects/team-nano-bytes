@@ -3,6 +3,7 @@ import Card from '../screens/2.1-Card';
 import data from '../data/data'
 import '../screens/2-Portfolio.css';
 import Pictures from '../components/Pictures';
+import Planets from '../components/Planets';
 
 
 class Portfolio extends Component {
@@ -51,6 +52,15 @@ class Portfolio extends Component {
           disabled={property.index === data.properties.length-1}
         >Next</button>
 
+    {/* <Pictures uri="http://localhost:3001/pictures" /> */}
+
+ <section>
+                <h1> Pictures</h1>
+
+    <Planets uri="http://localhost:3001/staticPlanets" />
+
+
+            </section> 
         <div className="page">
             <div className="col">
               <div className={`cards-slider active-slide-${property.index}`}>
@@ -68,12 +78,7 @@ class Portfolio extends Component {
            
         </div>
                 
-        {/* <section>
-                <h1> Pictures</h1>
-
-    <Pictures uri="http://localhost:3001/staticPictures" />
-
-            </section>  */}
+       
             
 
       </div>
