@@ -30,7 +30,7 @@ class Pictures extends React.Component {
       <div key={picture.Author}>
         <em>{picture.Author}</em>
 
-        <img src={picture.Url} height="100" width="100"/>
+        <img src={picture.Url} height="200" width="200"/>
 
       </div>
     ));
