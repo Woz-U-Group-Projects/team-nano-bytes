@@ -13,7 +13,11 @@ const About = () => (
     <div className="website">
       <h2>The Website:</h2>
 
-      <p>Something about the site here.</p>
+      < p > < br / We may live in stone buildings and use plastic and metal.
+      < br / But the breathing, living world outside, and even inside, is still part of us.
+      < br / Our heart, our bodies, are entwined forever with the life of this planet,
+      < br / and it fills our heart with glee to see our world at its most beautiful!
+      < br / Enjoy these stunning photos of our beautiful world! < /p>
     </div>
 
     <div className="team">
