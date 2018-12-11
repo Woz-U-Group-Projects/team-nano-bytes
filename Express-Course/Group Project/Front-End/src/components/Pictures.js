@@ -27,10 +27,10 @@ class Pictures extends React.Component {
       return <div>Failed to fetch data from server</div>;
     }
     const pictures = this.state.pictureData.map(picture => (
-      <div key={picture.author}>
-        <em>{picture.author}</em>
+      <div key={picture.Author}>
+        <em>{picture.Author}</em>
 
-        <img src={picture.url} height="42" width="42"/>
+        <img src={picture.Url} height="100" width="100"/>
 
       </div>
     ));

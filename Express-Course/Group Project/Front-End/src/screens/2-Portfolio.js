@@ -52,12 +52,13 @@ class Portfolio extends Component {
           disabled={property.index === data.properties.length-1}
         >Next</button>
 
-    {/* <Pictures uri="http://localhost:3001/pictures" /> */}
 
  <section>
                 <h1> Pictures</h1>
 
-    <Planets uri="http://localhost:3001/staticPlanets" />
+    {/* <Planets uri="http://localhost:3001/staticPlanets" /> */}
+    <Pictures uri="http://localhost:3001/pictures" />
+
 
 
             </section> 

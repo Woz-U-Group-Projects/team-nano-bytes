@@ -70,9 +70,10 @@ router.post('/pictures', (req, res) => {
 
 router.get('/pictures', function(req, res, next) {
   models.pictures.findAll({}).then(picturesFound => {
-    res.render('pictures', {
-      pictures: picturesFound
-    });
+    // res.render('pictures', {
+    //   pictures: picturesFound
+    // });
+    res.send(picturesFound)
   });
 });
 

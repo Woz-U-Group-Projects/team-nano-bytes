@@ -24,7 +24,7 @@ const About = () => (
     <div className="members">
       <h2>Team Members:</h2>
        
-       <img id="johnny" width= "200" height= "235" alt="JohnnyRodrguez" src="./assets/images/johnny.png"></img>      
+       <img id="johnny" width= "200" height= "235" alt="JohnnyRodrguez" src="../assets/images/johnny.png"></img>      
           <p>Johnny Rodriguez</p>
           <p>Front-End and Style</p>        
         
