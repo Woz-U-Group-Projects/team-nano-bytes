@@ -16,13 +16,14 @@ h2 {
     border-color: transparent;
 }
 
-/* img {
-    max-width: 300px;    
+.member {
+    max-width: 200px; 
+    max-height: 235px;   
     border-color: transparent;
     box-shadow: 2px 5px 2px rgb(60, 139, 139);
     display: block;
     margin: 0 auto 0 auto;
-} */
+} 
 
 p {
     text-align: center;

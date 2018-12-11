@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 import '../screens/3-About.css';
-
 /*import johnny from './assets/images/johnny.png';
 import ashley from './assets/images/ashley.png';
 import meeli from './assets/images/meeli.png';
@@ -24,20 +23,28 @@ const About = () => (
 
     <div className="members">
       <h2>Team Members:</h2>
-       
-       <img id="johnny" width= "200" height= "235" alt="JohnnyRodrguez" src="../assets/images/johnny.png"></img>      
+
+      {/*  <div className="member">
+          <img id={johnny} width= "200" height= "235" alt="JohnnyRodrguez" src={require('/assets/images/johnny.png')}></img> 
+          </div> */}
           <p>Johnny Rodriguez</p>
           <p>Front-End and Style</p>        
         
-        <img id="ashley" width= "200" height= "235" alt="AshleyWarren" src="./assets/images/ashley.png"></img>       
+      {/*  <div className="member">
+          <img id={ashley} width= "200" height= "235" alt="AshleyWarren" src={require('/assets/images/ashley.png')}></img> 
+        </div>     */}
           <p>Ashley Warren</p>
           <p>Back-End and Database</p>        
         
-        <img id="meeli" width= "200" height= "235" alt="MeeliSonn" src="./assets/images/meeli.png"></img>        
+      {/*  <div className="member">
+          <img id={meeli} width= "200" height= "235" alt="MeeliSonn" src={require('/assets/images/meeli.png')}></img> 
+        </div>       */}
           <p>Meeli Sonn</p>
           <p>Back-End and Database</p>      
         
-        <img id="gaylyn" width= "200" height= "235" alt="GayLynJaramillo" src="./assets/images/gaylyn.png"></img>            
+      {/*  <div className="member">
+        <img id={gaylyn} width= "200" height= "235" alt="GayLynJaramillo" src={require('/assets/images/gaylyn.png')}></img> 
+        </div>           */}
           <p>GayLyn Jaramillo</p>
           <p>Front-End and Style <br/> Began working with 3D modeling and photo editing programs as a hobby.<br/> Wanting to further her knowledge, in 2018 she began taking software development course with Woz U. </p>
       </div>
