@@ -1,8 +1,9 @@
 
 import React, { Component } from 'react';
 import '../screens/3-About.css';
+
 /*import johnny from './assets/images/johnny.png';
-import a from './assets/images/ashley.png';
+import ashley from './assets/images/ashley.png';
 import meeli from './assets/images/meeli.png';
 import gaylyn from './assets/images/gaylyn.png'; */
 
