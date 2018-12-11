@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     position: relative;
-    background-color: #0bafb578;
+    font-family: 'Noto Serif TC', serif;
     font-size: 24px;
     color:white;
     border-color: transparent;
@@ -28,4 +28,6 @@ p {
     text-align: center;
     position: relative;
     color: white;
+    font-size: 15px
 }
+
