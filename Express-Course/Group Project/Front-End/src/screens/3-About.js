@@ -37,7 +37,11 @@ const About = () => (
         <img id="meeli" width= "200" height= "235" alt="MeeliSonn" src={meeli}/>  
 
           <p>Meeli Sonn</p>
-          <p>Back-End and Database <br/> I was a teacher. <br/> I like to take pictures</p>      
+          < p > Back - End and Database < br / > I like to write
+          < br / > I like photography
+          < br / > I have two Masters: in Education Geography.Biology: and in Instructional Design.
+          < br / > Web Developing I started two years ago in Coder Camp what later got name WOZ - U.
+ </p>      
         
         <img id="gaylyn" width= "200" height= "235" alt="GayLynJaramillo" src={gaylyn}/>           
           <p>GayLyn Jaramillo</p>
