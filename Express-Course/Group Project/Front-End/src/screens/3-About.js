@@ -13,11 +13,12 @@ const About = () => (
     <div className="website">
       <h2>The Website:</h2>
 
-      < p > < br / We may live in stone buildings and use plastic and metal.
+      < p >In our Website you can see the beautiful photos </p>
+      < br / We may live in stone buildings and use plastic and metal.
       < br / But the breathing, living world outside, and even inside, is still part of us.
       < br / Our heart, our bodies, are entwined forever with the life of this planet,
       < br / and it fills our heart with glee to see our world at its most beautiful!
-      < br / Enjoy these stunning photos of our beautiful world! < /p>
+      < br / Enjoy these stunning photos of our beautiful world!
     </div>
 
     <div className="team">
@@ -41,15 +42,16 @@ const About = () => (
         <img id="meeli" width= "200" height= "235" alt="MeeliSonn" src={meeli}/>  
 
           <p>Meeli Sonn</p>
-          < p > Back - End and Database < br / > I like to write
-          < br / > I like photography
-          < br / > I have two Masters: in Education Geography.Biology: and in Instructional Design.
-          < br / > Web Developing I started two years ago in Coder Camp what later got name WOZ - U.
+          < p > Back - End and Database < br / > She likes to write
+          < br / > She likes photography very much
+          < br / > She has two Masters: in Education Geography and Biology and in Instructional Design.
+          < br / > Web Developing she started 2017 in Coder Camp (WOZ - U).
  </p>      
         
         <img id="gaylyn" width= "200" height= "235" alt="GayLynJaramillo" src={gaylyn}/>           
           <p>GayLyn Jaramillo</p>
-          <p>Front-End and Style <br/> Began working with 3D modeling and photo editing programs as a hobby.<br/> Wanting to further her knowledge, in 2018 she began taking software development course with Woz U. </p>
+          <p>Front-End and Style <br/> Began working with 3D modeling and photo editing programs as a hobby.
+          <br/> Wanting to further her knowledge, in 2018 she began taking software development course with Woz U. </p>
       </div>
 
     <div className="contact">
