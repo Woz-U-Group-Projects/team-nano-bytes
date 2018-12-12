@@ -113,3 +113,16 @@ img {
     color: white;
     font-size: 15px;
 }
+
+@media (max-width: 600px) {
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 800px) {
+    p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+}
