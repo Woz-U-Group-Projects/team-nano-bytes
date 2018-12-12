@@ -26,6 +26,10 @@ module.exports.picture = [
     {
       author: 'Felix Dubois-Robert',
       url: "https://images.unsplash.com/photo-1463425595370-6332fbac82cc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4391b9208089230512137cf56d59f737&auto=format&fit=crop&w=634&q=80"
+    },
+    {
+      author: 'Mimi Garcia',
+      url: "https://images.unsplash.com/photo-1508247967583-7d982ea01526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
     }
     
   ];

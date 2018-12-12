@@ -30,7 +30,7 @@ class Pictures extends React.Component {
     }
     const pictures = this.state.pictureData.map(picture => (
       <div key={picture.Author} className="pictures">
-      <div >
+      <div className="placement">
         <em>{picture.Author}</em>
 
         <img src={picture.Url} alt="Gallery" className="pictures1"/>

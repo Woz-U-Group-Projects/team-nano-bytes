@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../screens/3-About.css';
 import johnny from '../assets/images/johnny.png';
 import ashley from '../assets/images/ashley.png';
@@ -7,7 +7,7 @@ import gaylyn from '../assets/images/gaylyn.png';
 
 const About = () => (
   <div className="aboutPage">
-      <h1>About "Our World is a Beautiful Place"</h1>
+      <h1>Our World is a Beautiful Place</h1>
 
     <div className="website">
       <h2>The Website:</h2>
@@ -56,7 +56,7 @@ const About = () => (
             <p id="name">GayLyn Jaramillo</p>      
         <div id="info">            
             <p id="code">Front-End and Style</p>
-            <p id="about">Began working with 3D modeling and photo editing programs as a hobby.<br/> Wanting to further her knowledge, in 2018 she began taking software development course with Woz U. </p>
+            <p id="about">Began working with 3D modeling and photo editing programs as a hobby.<br/> Wanting to further her knowledge, in 2018, she began taking software development course with Woz U. </p>
         </div>
       </div>
 
