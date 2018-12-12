@@ -31,7 +31,8 @@ const About = () => (
         <img id="ashley" width= "200" height= "235" alt="AshleyWarren" src={ashley}/>    
           <p>Ashley Warren</p>
           <p>Back-End and Database</p>        
-        
+          <p>Front-End and Style <br/> Ashley been working in the music industry for the past 8 1/2 years<br/> Wanting to further her knowledge in creating programs and webpages for musicinas, she enrolled in the Full Stack Development course with Woz U. </p>
+      </div>
         
 
         <img id="meeli" width= "200" height= "235" alt="MeeliSonn" src={meeli}/>  
