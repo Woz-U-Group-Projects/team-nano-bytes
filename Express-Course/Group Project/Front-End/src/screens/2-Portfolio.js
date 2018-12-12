@@ -32,27 +32,26 @@ class Portfolio extends Component {
 
     return (
       <div className="App">
-        <div className="container center" />
-
-        <button
+      <h1 className="container"> Pictures</h1>
+        <div/>
+        
+        <section >
+          
+          <Pictures uri="http://localhost:3001/pictures" />
+        </section>
+        <div className="buttons" >
+        <button  className="button"
           onClick={() => this.prevProperty()}
-          disabled={property.index === 0}
-        >
+          disabled={property.index === 0}>
           Prev
         </button>
 
-        <button
+        <button  className="button"
           onClick={() => this.nextProperty()}
-          disabled={property.index === data.properties.length - 1}
-        >
+          disabled={property.index === data.properties.length - 1}>
           Next
         </button>
-
-        <section>
-          <h1> Pictures</h1>
-
-          <Pictures uri="http://localhost:3001/pictures" />
-        </section>
+        </div>
         <div className="page">
           <div className="col">
             <div className={`cards-slider active-slide-${property.index}`}>
