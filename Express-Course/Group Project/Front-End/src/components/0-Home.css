@@ -21,7 +21,7 @@
 
 #SField {
     width: 500px;
-    background-color:white;
+    background-color:black;
     color:white;
 
 }
@@ -31,6 +31,10 @@
     font-family: 'Noto Serif TC', serif;
     box-shadow: 2px 5px 2px rgb(60, 139, 139);
     
+}
+
+.search {
+    background: black;
 }
 
 
