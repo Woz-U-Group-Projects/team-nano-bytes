@@ -1,0 +1,26 @@
+<h1>Add a new Picture!</h1>
+
+<form action="/pictures" method="POST">
+    <div>
+        <p>
+        <label for="author">Author: </label>
+        <input type="text" author="author">
+        </p>
+        <p>
+        <label for="url">Url: </label>
+        <input type="text" url="url">
+        </p>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+
+<h2>Pictures:</h2>
+
+
+{{#each pictures}}
+<h1>{{Author}}</h1>
+<h2>{{Url}}</h2>
+{{/each}}

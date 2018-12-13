@@ -4,7 +4,7 @@ const sqlite = require('sqlite3').verbose();
 const models = require('../models');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
-const staticModels = require('../staticModels/pictures');
+
 
 router.get('/', function (req, res, next){ 
   res.send('Team Nano');
@@ -35,12 +35,14 @@ router.post('/users', (req, res) => {
     });
 });
 
-router.get('/staticPictures', function (req, res, next) {
 
-  res.send(JSON.stringify(
-    staticModels.picture
-  ));
+
+router.get('/pictures', function(req, res, next) {
+  models.pictures.findAll({}).then(picturesFound => {
+    res.send(picturesFound)
+  });
 });
+
 
 
 module.exports = router;
