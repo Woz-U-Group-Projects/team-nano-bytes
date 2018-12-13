@@ -5,7 +5,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const  Home  = () => (
   <div >
-    <p className="title">Our World Is A Beautiful Place</p>
+    <h1 className="title">  Our World Is A Beautiful Place</h1>
 
           <MuiThemeProvider>
 

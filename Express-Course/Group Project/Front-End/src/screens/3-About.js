@@ -20,36 +20,37 @@ const About = () => (
       <p className="info">"Our World Is So Beautiful" was started by a group of students called Team Nano Bytes as a team project. <br/> The team consists of four students: Johnny Rodriguez, Meeli Sonn, Ashley Warren, and GayLyn Jaramillo.</p> 
     </div>
 
-    <div className="members">   
+       
       <h2>Team Members:</h2>
 
       <div id="member">
           <img className="photo" src={johnny} alt="JohnnyRodrguez"  />
             <p id="name">Johnny Rodriguez</p>        
-        <div id="info">            
+      </div>   
+      <div id="info">            
             <p id="code">Front-End and Style</p> 
             <p id="about">Some information about Johnny goes here.</p>  
-        </div> 
-      </div>   
-     
+      </div> 
 
       <div id="member">   
-          <img className="photo"  alt="AshleyWarren" src={ashley}/>
+          <img className="photo" alt="AshleyWarren" src={ashley}/>
             <p id="name">Ashley Warren</p>        
-        <div id="info">                
+      </div>  
+      <div id="info">                
             <p id="code">Back-End and Database</p>
             <p id="about">Ashley has been working in the music industry for 8 1/2 years. <br/>She looks to help the music industry and independent artists through knowledge gained by taking the Full Stack Development course at WOZ-U.</p> 
         </div>       
-      </div>  
+        
         
       <div id="member">
           <img className="photo"  alt="MeeliSonn" src={meeli}/>
             <p id="name">Meeli Sonn</p>        
-        <div id="info">            
+      </div>    
+      <div id="info">            
             <p id="code">Back-End and Database</p> 
             <p id="about">Meeli likes to write. She likes photography very much. <br/> She has two Master: in Education Geography and Biology and in Instruction Design. <br/> Web Developing she started in 2017 in Coder Camp (WOZ-U).</p> 
         </div>
-      </div>    
+       
         
       <div id="member">  
           <img className="photo" alt="GayLynJaramillo" src={gaylyn}/> 
@@ -60,7 +61,8 @@ const About = () => (
         </div>
       </div>
 
-      </div>
+      
+      
 
     <div className="contact">
       <h2>Contact Info:</h2> 
