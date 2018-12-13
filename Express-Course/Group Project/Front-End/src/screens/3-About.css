@@ -105,7 +105,7 @@ h1 {
     background: linear-gradient(to left, #60beb185 15%, rgba(255, 255, 255, 0) 100%);
 }
 
-img {
+/* img {
     max-width: 200px; 
     max-height: 235px;  
     padding: 10px 15px 20px 25px; 
@@ -114,7 +114,7 @@ img {
     display: block; 
     position: relative;  
     background: linear-gradient(to left, #60beb185 15%, rgba(255, 255, 255, 0) 100%); 
-} 
+}  */
 
 .contact {    
     text-align: center;
