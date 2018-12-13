@@ -38,7 +38,7 @@ const About = () => (
             <p id="name">Ashley Warren</p>        
         <div id="info">                
             <p id="code">Back-End and Database</p>
-            <p id="about">Some information about Ashley goes here.</p> 
+            <p id="about">Ashley has been working in the music industry for 8 1/2 years. She looks to help the music industry and independent artists through knowledge gained by taking the Full Stack Development course at WOZ-U.</p> 
         </div>       
       </div>  
         
