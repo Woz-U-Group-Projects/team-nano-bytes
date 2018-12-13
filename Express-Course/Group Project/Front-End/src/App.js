@@ -1,97 +1,49 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Home from "./screens/1-Home";
+import Portfolio from "./screens/2-Portfolio";
+import About from "./screens/3-About";
+import Topics from './screens/Topics';
 import './App.css';
-import Card from './Card';
-import data from './data/data'
-import logo from './logo.png';
-import axios from 'axios';
-import Pictures from './components/Pictures';
-import EpicMenu from './components/EpicMenu';
-// import About from './components/About';
-// import Portfolio from './components/Portfolio';
-//Hello Meeli
+import './1-Navbar.css';
+/*import johnny from './assets/images/johnny.png';
+import ashley from './assets/images/ashley.png';
+import meeli from './assets/images/meeli.png';
+import gaylyn from './assets/images/gaylyn.png'; */
 
 
-class App extends Component {
+const App = () => (
+  <Router>
+    <div  >
+      <ul className="nav">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
 
-  constructor(props){
-    super(props);
-    this.state = {
-      properties: data.properties,
-      property: data.properties[0]
-    }
-  }
+        <li>
+          <Link to="/portfolio">Portfolio</Link>
+        </li>
 
- 
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/topics">Topics</Link>
+        </li>
 
-  prevProperty = () => {
-    const newIndex = this.state.property.index-1;
-    this.setState({
-      property: data.properties[newIndex]
-    })
-  }
+      </ul>
 
-  nextProperty = () => {
-    const newIndex = this.state.property.index+1;
-    this.setState({
-      property: data.properties[newIndex]
-    })
-  }
+    
 
-  render() {
-   
-    const {properties, property} = this.state;
-    let links =   [
-      { label: 'Home', link: '/home'},
-      { label: 'About', link: '/about'},
-      { label: 'Portfolio', link: '/portfolio'},
-      { label: 'Contact Us', link: '/contact-us'},
-]
-   
-    return (
-
-<div className="App">
-
-   <div className="container center">
-
-<EpicMenu links={links} logo={logo} />>
+      <Route exact path="/" component={Home} />
+      <Route path="/portfolio" component={Portfolio} />
+      <Route path="/about" component={About} />
+      <Route path="/topics" component={Topics} />
 
     </div>
-        
-        <button 
-          onClick={() => this.prevProperty()} 
-          disabled={property.index === 0}
-        >Prev</button>
+  </Router>
+);
 
-        <button 
-          onClick={() => this.nextProperty()} 
-          disabled={property.index === data.properties.length-1}
-        >Next</button>
 
-        <div className="page">
-                    
-            <section>
-                <h1> Pictures</h1>
-
-    <Pictures uri="http://localhost:3001/staticPictures" />
-
-            </section>
-            <div className="col">
-              <div className={`cards-slider active-slide-${property.index}`}>
-                <div className="cards-slider-wrapper" style={{
-                  'transform': `translateX(-${property.index*(100/properties.length)}%)`
-                }}>
-                  {
-                    properties.map(property => <Card key={property._id} property={property} />)
-                  }
-                </div>
-              </div>
-            </div>
-
-        </div>
-      </div>
-    );
-  }
-}
 
 export default App;
-

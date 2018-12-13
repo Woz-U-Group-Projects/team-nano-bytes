@@ -1,11 +1,13 @@
 {
-  "name": "lesson_nine_react",
+  "name": "Front-End",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "material-ui": "^0.20.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
   },
   "scripts": {
@@ -22,5 +24,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "file-loader": "^2.0.0",
+    "url-loader": "^1.1.2"
+  }
 }

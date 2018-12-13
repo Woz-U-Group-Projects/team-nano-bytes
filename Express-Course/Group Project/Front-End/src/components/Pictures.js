@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import "../components/Pictures.css";
+
 
 class Pictures extends React.Component {
   state = {
@@ -27,8 +29,12 @@ class Pictures extends React.Component {
       return <div>Failed to fetch data from server</div>;
     }
     const pictures = this.state.pictureData.map(picture => (
-      <div key={picture.author}>
-        <em>{picture.author}</em>: {picture.url}
+      <div key={picture.Author} className="pictures">
+      <div className="placement">
+        <em>{picture.Author}</em>
+
+        <img src={picture.Url} alt="Gallery" className="pictures1"/>
+        </div>
       </div>
     ));
     return <div>{pictures}</div>;
