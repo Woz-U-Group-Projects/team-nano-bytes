@@ -1,5 +1,4 @@
-
-import React, { Component } from 'react';
+import React from 'react';
 import '../screens/3-About.css';
 import johnny from '../assets/images/johnny.png';
 import ashley from '../assets/images/ashley.png';
@@ -8,39 +7,23 @@ import gaylyn from '../assets/images/gaylyn.png';
 
 const About = () => (
   <div className="aboutPage">
-      <h1>About "Our World is a Beautiful Place"</h1>
+      <h1>Our World is a Beautiful Place</h1>
 
     <div className="website">
       <h2>The Website:</h2>
 
-      < p >In our Website you can see the beautiful photos </p>
-      < br / We may live in stone buildings and use plastic and metal.
-      < br / But the breathing, living world outside, and even inside, is still part of us.
-      < br / Our heart, our bodies, are entwined forever with the life of this planet,
-      < br / and it fills our heart with glee to see our world at its most beautiful!
-      < br / Enjoy these stunning photos of our beautiful world!
-    </div>
+       
 
-    <div className="team">
-      <h2>The Team:</h2>
-      <p>"Our World Is So Beautiful" was started by a group of students called Team Nano Bytes as a team project. The team consists of four students: Johnny Rodriguez, Meeli Sonn, Ashley Warren, and GayLyn Jaramillo.</p> 
-    </div>
+      <div id="member">
+          <img className="photo" src={johnny} alt="JohnnyRodrguez"  />
+            <p id="name">Johnny Rodriguez</p>        
+      </div>   
+      <div id="info">            
+            <p id="code">Front-End and Style</p> 
+            <p id="about">Some information about Johnny goes here.</p>  
+      </div> 
 
-    <div className="members">
-    
-      <h2>Team Members:</h2>
-       <img src={johnny} alt="JohnnyRodrguez" width= "200" height= "235" />      
-          <p>Johnny Rodriguez</p>
-          <p>Front-End and Style</p>        
-        
-        <img id="ashley" width= "200" height= "235" alt="AshleyWarren" src={ashley}/>    
-          <p>Ashley Warren</p>
-          <p>Back-End and Database</p>        
-        
-        
-
-        <img id="meeli" width= "200" height= "235" alt="MeeliSonn" src={meeli}/>  
-
+<<<<<<< HEAD
           <p>Meeli Sonn</p>
           < p > Back - End and Database < br / > She likes to write
           < br / > She likes photography very much
@@ -52,7 +35,39 @@ const About = () => (
           <p>GayLyn Jaramillo</p>
           <p>Front-End and Style <br/> Began working with 3D modeling and photo editing programs as a hobby.
           <br/> Wanting to further her knowledge, in 2018 she began taking software development course with Woz U. </p>
+=======
+      <div id="member">   
+          <img className="photo" alt="AshleyWarren" src={ashley}/>
+            <p id="name">Ashley Warren</p>        
+      </div>  
+      <div id="info">                
+            <p id="code">Back-End and Database</p>
+            <p id="about">Ashley has been working in the music industry for 8 1/2 years. <br/>She looks to help the music industry and independent artists through knowledge gained by taking the Full Stack Development course at WOZ-U.</p> 
+        </div>       
+        
+        
+      <div id="member">
+          <img className="photo"  alt="MeeliSonn" src={meeli}/>
+            <p id="name">Meeli Sonn</p>        
+      </div>    
+      <div id="info">            
+            <p id="code">Back-End and Database</p> 
+            <p id="about">Meeli likes to write. She likes photography very much. <br/> She has two Master: in Education Geography and Biology and in Instruction Design. <br/> Web Developing she started in 2017 in Coder Camp (WOZ-U).</p> 
+        </div>
+       
+        
+      <div id="member">  
+          <img className="photo" alt="GayLynJaramillo" src={gaylyn}/> 
+            <p id="name">GayLyn Jaramillo</p>      
+        <div id="info">            
+            <p id="code">Front-End and Style</p>
+            <p id="about">GayLyn began working with 3D modeling and photo editing programs as a hobby.<br/> Wanting to further her knowledge, in 2018 she began taking software development course with WOZ-U. </p>
+        </div>
+>>>>>>> 7cf8de0408d99fc06fabc28c94f620e4c2687bea
       </div>
+
+      
+      
 
     <div className="contact">
       <h2>Contact Info:</h2> 

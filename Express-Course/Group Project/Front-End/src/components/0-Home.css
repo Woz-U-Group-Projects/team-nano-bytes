@@ -21,7 +21,7 @@
 
 #SField {
     width: 500px;
-    background-color:white;
+    background-color:black;
     color:white;
 
 }
@@ -33,13 +33,18 @@
     
 }
 
-button {
-    background-color: #1f9ec7d4;
-    font-size: 24px;
-    color:white;
-    border-color: transparent;
-    position: relative;
-   }
+.intro {
+    max-width: 2400px; 
+    max-height: 400px;  
+    padding: 10px 600px 10px 600px;
+    box-shadow: 5px 7px 2px rgb(60, 139, 139);
+}
+
+.search {
+    background: black;
+}
+
+
 
    label {
        color: white;

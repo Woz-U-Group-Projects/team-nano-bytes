@@ -1,0 +1,36 @@
+.em {
+    padding:10px;
+      
+}
+
+.placement{
+  float: right; 
+  margin: 0px 0px 15px 15px;
+  position: relative;
+}
+
+.pictures {
+    color:white;
+       
+           
+}
+
+.pictures1 {
+  height: 25%;
+  width: 25%;
+  color:white;    
+    
+}
+
+@media (max-width: 600px) {
+  p {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 800px) {
+  p {
+      font-size: 1.5rem;
+      line-height: 1.5;
+  }
+}
