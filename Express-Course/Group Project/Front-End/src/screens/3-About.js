@@ -22,7 +22,7 @@ const About = () => (
 
        
       <h2>Team Members:</h2>
-
+     <div className="members">
       <div id="member">
           <img className="photo" src={johnny} alt="JohnnyRodrguez"  />
             <p id="name">Johnny Rodriguez</p>        
@@ -60,7 +60,7 @@ const About = () => (
             <p id="about">GayLyn began working with 3D modeling and photo editing programs as a hobby.<br/> Wanting to further her knowledge, in 2018 she began taking software development course with WOZ-U. </p>
         </div>
       </div>
-
+      </div>
       
       
 

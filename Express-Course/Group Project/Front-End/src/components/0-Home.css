@@ -34,10 +34,12 @@
 }
 
 .intro {
-    max-width: 2400px; 
-    max-height: 400px;  
-    padding: 10px 600px 10px 600px;
-    box-shadow: 5px 7px 2px rgb(60, 139, 139);
+    display: block;
+    max-width: 100%; 
+    height: auto;  
+    padding: 10px 25px 10px 25px;
+    text-align: center;
+    position: relative;
 }
 
 .search {
