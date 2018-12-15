@@ -4,8 +4,7 @@ section {
 }
 .container {
     
-    background: linear-gradient(to right, #60beb185 -24%, rgba(255, 255, 255, 0) 57%);
-    height: 29px;
+    height: 42px;
   }
 
   .buttons {
