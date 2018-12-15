@@ -1,8 +1,8 @@
 import React from 'react';
 import '../screens/3-About.css';
 import johnny from '../assets/images/johnny.jpg';
-import ashley from '../assets/images/ashley.png';
-import meeli from '../assets/images/meeli.png';
+import ashley from '../assets/images/ashley.jpg';
+import meeli from '../assets/images/meeli.jpg';
 import gaylyn from '../assets/images/gaylyn.png'; 
 
 const About = () => (
@@ -12,7 +12,7 @@ const About = () => (
     <div className="website">
       <h2>The Website:</h2>
 
-      <p className="info">In our Website you can see the beautiful photos.</p>
+      <p className="info">A website to contemplate on pictures around the World</p>
     </div>
 
     <div className="team">
