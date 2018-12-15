@@ -35,10 +35,7 @@ class Portfolio extends Component {
       <h1 className="container"> Pictures</h1>
         <div/>
         
-        <section >
-          
-          <Pictures uri="http://localhost:3001/pictures" />
-        </section>
+       
         <div className="buttons" >
         <button  className="button"
           onClick={() => this.prevProperty()}
@@ -69,6 +66,10 @@ class Portfolio extends Component {
             </div>
           </div>
         </div>
+        <section >
+          
+          <Pictures uri="http://localhost:3001/pictures" />
+        </section>
       </div>
     );
   }

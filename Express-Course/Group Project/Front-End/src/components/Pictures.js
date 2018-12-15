@@ -29,8 +29,8 @@ class Pictures extends React.Component {
       return <div>Failed to fetch data from server</div>;
     }
     const pictures = this.state.pictureData.map(picture => (
-      <div key={picture.Author} className="pictures">
-      <div className="placement">
+      <div key={picture.Author} className="row">
+      <div className="column">
         <em>{picture.Author}</em>
 
         <img src={picture.Url} alt="Gallery" className="pictures1"/>

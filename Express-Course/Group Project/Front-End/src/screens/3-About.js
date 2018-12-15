@@ -1,6 +1,6 @@
 import React from 'react';
 import '../screens/3-About.css';
-import johnny from '../assets/images/johnny.png';
+import johnny from '../assets/images/johnny.jpg';
 import ashley from '../assets/images/ashley.png';
 import meeli from '../assets/images/meeli.png';
 import gaylyn from '../assets/images/gaylyn.png'; 
@@ -24,12 +24,12 @@ const About = () => (
       <h2>Team Members:</h2>
      <div className="members">
       <div id="member">
-          <img className="photo" src={johnny} alt="JohnnyRodrguez"  />
+          <img className="johnny" src={johnny} alt="JohnnyRodrguez"  />
             <p id="name">Johnny Rodriguez</p>        
       </div>   
       <div id="info">            
-            <p id="code">Front-End and Style</p> 
-            <p id="about">Some information about Johnny goes here.</p>  
+            <p id="code">Front-End, Back-End, and Database</p> 
+            <p id="about">Johnny plays chess and does woodworking in his freetime. </p>  
       </div> 
 
       <div id="member">   
